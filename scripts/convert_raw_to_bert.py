@@ -63,3 +63,7 @@ with h5py.File(args.output_path, 'w') as fout:
 # python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud-sample/en_ewt-ud-dev.txt example/data/en_ewt-ud-sample/en_ewt-ud-dev.bert-base-layers.hdf5 base
 # python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud-sample/en_ewt-ud-test.txt example/data/en_ewt-ud-sample/en_ewt-ud-test.bert-base-layers.hdf5 base
 # python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud-sample/en_ewt-ud-train.txt example/data/en_ewt-ud-sample/en_ewt-ud-train.bert-base-layers.hdf5 base
+
+# python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud/en_ewt-ud-dev.txt example/data/en_ewt-ud/en_ewt-ud-dev.bert-base-layers.hdf5 base
+# python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud/en_ewt-ud-test.txt example/data/en_ewt-ud/en_ewt-ud-test.bert-base-layers.hdf5 base
+# python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud/en_ewt-ud-train.txt example/data/en_ewt-ud/en_ewt-ud-train.bert-base-layers.hdf5 base

@@ -1,7 +1,7 @@
 *.label_acc
 *.params
-*.yaml
 *.pyc
 *.hdf5
 *.conllu
 /example/
+/results/

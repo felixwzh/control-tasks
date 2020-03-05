@@ -24,3 +24,8 @@ for line in open(args.input_conll_filepath):
     buf.append(line.split('\t')[1])
 if buf:
     sys.stdout.write(' '.join(buf) + '\n')
+
+
+# python scripts/convert_conll_to_raw.py ./example/data/en_ewt-ud/en_ewt-ud-test.conllu > ./example/data/en_ewt-ud/en_ewt-ud-test.txt
+# python scripts/convert_conll_to_raw.py ./example/data/en_ewt-ud/en_ewt-ud-dev.conllu > ./example/data/en_ewt-ud/en_ewt-ud-dev.txt
+# python scripts/convert_conll_to_raw.py ./example/data/en_ewt-ud/en_ewt-ud-train.conllu > ./example/data/en_ewt-ud/en_ewt-ud-train.txt
