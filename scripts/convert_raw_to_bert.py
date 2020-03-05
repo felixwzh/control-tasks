@@ -56,5 +56,10 @@ with h5py.File(args.output_path, 'w') as fout:
         encoded_layers, _ = model(tokens_tensor, segments_tensors)
     dset = fout.create_dataset(str(index), (LAYER_COUNT, len(tokenized_text), FEATURE_COUNT))
     dset[:,:,:] = np.vstack([np.array(x) for x in encoded_layers])
+
+
   
 
+# python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud-sample/en_ewt-ud-dev.txt example/data/en_ewt-ud-sample/en_ewt-ud-dev.bert-base-layers.hdf5 base
+# python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud-sample/en_ewt-ud-test.txt example/data/en_ewt-ud-sample/en_ewt-ud-test.bert-base-layers.hdf5 base
+# python scripts/convert_raw_to_bert.py  example/data/en_ewt-ud-sample/en_ewt-ud-train.txt example/data/en_ewt-ud-sample/en_ewt-ud-train.bert-base-layers.hdf5 base

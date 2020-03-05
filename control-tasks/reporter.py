@@ -322,6 +322,7 @@ class WordReporter(Reporter):
     root_acc = correct_root_predictions / float(total_sents)
     with open(os.path.join(self.reporting_root, split_name + '.root_acc'), 'w') as fout:
       fout.write('\t'.join([str(root_acc), str(correct_root_predictions), str(total_sents)]) + '\n')
+      print(os.path.join(self.reporting_root, split_name + '.root_acc'),root_acc)
 
   def report_label_values(self, prediction_batches, dataset, split_name):
     total = 0
@@ -337,6 +338,7 @@ class WordReporter(Reporter):
         correct += np.sum(predictions == label)
     with open(os.path.join(self.reporting_root, split_name + '.label_acc'), 'w') as fout:
       fout.write(str(float(correct)/  total) + '\n')
+      print(os.path.join(self.reporting_root, split_name + '.label_acc'),float(correct)/  total)
 
   def report_oov_label_values(self, prediction_batches, dataset, split_name):
     # Construct in-vocab set

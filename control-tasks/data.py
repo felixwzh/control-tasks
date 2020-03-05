@@ -89,6 +89,7 @@ class SimpleDataset:
     train_observations = self.optionally_add_embeddings(train_observations, train_embeddings_path)
     dev_observations = self.optionally_add_embeddings(dev_observations, dev_embeddings_path)
     test_observations = self.optionally_add_embeddings(test_observations, test_embeddings_path)
+    print('read_from_disk(self)')
     return train_observations, dev_observations, test_observations
 
   def get_observation_class(self, fieldnames):
