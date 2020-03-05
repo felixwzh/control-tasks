@@ -63,10 +63,15 @@ In this section, we go over each top-level key of the experiment config.
  - `corpus`: The location of the train, dev, and test conll-formatted corpora files. Each of `train_path`,
    `dev_path`, `test_path` will be taken as relative to the `root` field.
  - `embeddings`: The location of the train, dev, and test pre-computed embedding files (ignored if not applicable.
- Each of `train_path`, `dev_path`, `test_path` will be taken as relative to the `root` field.
+ Each of `train_path`, `dev_path`, `test_path` will be taken as relative to the `root` field. `embedding_dim` is the word embedding dimension
         - `type` is ignored.
  - `batch_size`: The number of observations to put into each batch for training the probe. 20 or so should be great.
  - `dataset_size`: The number of observations to cap the _training_ data to when training this probe. 
+ - `sub_dim`: The subspace of the embedding dimension we will use in subspace probing. `do_sub_dim` is either True of False, to indicate whether we will do this subspace probing. `dim_num` is the number of subspace dimension. `dim_file` is the file that store the sub dims we will use, if it equls "None", then we will simply take the first `dim_num` of the word embedding.
+ sub_dim:
+    do_sub_dim: True
+    dim_num: 384
+    dim_file: dim.tsv
 ```
 dataset:
   observation_fieldnames:
@@ -92,6 +97,11 @@ dataset:
     train_path: en_ewt-ud-train.elmo-layers.hdf5
     dev_path: en_ewt-ud-dev.elmo-layers.hdf5
     test_path: en_ewt-ud-test.elmo-layers.hdf5
+    embedding_dim: 1024 # word embedding dim       
+  sub_dim:
+    do_sub_dim: True
+    dim_num: 384
+    dim_file: dim.tsv    
   batch_size: 40
   dataset_size: 40000
 ```

@@ -90,14 +90,14 @@ class SimpleDataset:
     dev_observations = self.optionally_add_embeddings(dev_observations, dev_embeddings_path)
     test_observations = self.optionally_add_embeddings(test_observations, test_embeddings_path)
     
-    # set sub dimensions
-    # TODO: add a if condition, we only do this dimention subtraction when indicated in the config
     if self.args['dataset']['sub_dim']['do_sub_dim']:
-      assert self.args['dataset']['sub_dim']['dim_num']==self.args['model']['hidden_dim']
+      assert self.args['dataset']['sub_dim']['dim_num'] == self.args['model']['hidden_dim']
+      assert self.args['dataset']['sub_dim']['dim_num'] <= self.args['dataset']['embeddings']['embedding_dim']
       train_observations = self.optionally_select_sub_dimensions_embeddings(train_observations)
       dev_observations = self.optionally_select_sub_dimensions_embeddings(dev_observations)
       test_observations = self.optionally_select_sub_dimensions_embeddings(test_observations)
-
+    else:
+      assert self.args['dataset']['embeddings']['embedding_dim'] == self.args['model']['hidden_dim']
     return train_observations, dev_observations, test_observations
 
   def get_observation_class(self, fieldnames):
@@ -433,10 +433,10 @@ class BERTDataset(SubwordDataset):
     if subword_tokenizer == None:
       try:
         from pytorch_pretrained_bert import BertTokenizer
-        if self.args['model']['embedding_dim'] == 768:
+        if self.args['dataset']['embeddings']['embedding_dim'] == 768:
           subword_tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
           print('Using BERT-base-cased tokenizer to align embeddings with PTB tokens')
-        elif self.args['model']['embedding_dim'] == 1024:
+        elif self.args['dataset']['embeddings']['embedding_dim'] == 1024:
           subword_tokenizer = BertTokenizer.from_pretrained('bert-large-cased')
           print('Using BERT-large-cased tokenizer to align embeddings with PTB tokens')
         else:
