@@ -89,7 +89,15 @@ class SimpleDataset:
     train_observations = self.optionally_add_embeddings(train_observations, train_embeddings_path)
     dev_observations = self.optionally_add_embeddings(dev_observations, dev_embeddings_path)
     test_observations = self.optionally_add_embeddings(test_observations, test_embeddings_path)
-    print('read_from_disk(self)')
+    
+    # set sub dimensions
+    # TODO: add a if condition, we only do this dimention subtraction when indicated in the config
+    if self.args['dataset']['sub_dim']['do_sub_dim']:
+      assert self.args['dataset']['sub_dim']['dim_num']==self.args['model']['hidden_dim']
+      train_observations = self.optionally_select_sub_dimensions_embeddings(train_observations)
+      dev_observations = self.optionally_select_sub_dimensions_embeddings(dev_observations)
+      test_observations = self.optionally_select_sub_dimensions_embeddings(test_observations)
+
     return train_observations, dev_observations, test_observations
 
   def get_observation_class(self, fieldnames):
@@ -260,6 +268,35 @@ class SimpleDataset:
   def optionally_add_embeddings(self, observations, pretrained_embeddings_path):
     """Does not add embeddings; see subclasses for implementations."""
     return observations
+    
+  def optionally_select_sub_dimensions_embeddings(self, observations):
+    """ select a sub space of the dimensions of the embeddings in the observations.  
+    
+    Args:
+      dims: a list of dims that we will  want to use
+    
+    Returns:
+      observations: observations with embeddings shrinked.    
+    """
+
+    # read dim_file
+    if self.args['dataset']['sub_dim']['dim_file']!='None':
+      with open(self.args['dataset']['sub_dim']['dim_file'],'r') as fin:
+        lines = fin.readlines()
+        dims_str = lines[0].strip().split(' ')
+      dims = []
+      for dim in dims_str:
+        dims.append(int(dim))
+      assert len(dims) == self.args['dataset']['sub_dim']['dim_num']
+    else:
+      dims=list(range(self.args['dataset']['sub_dim']['dim_num']))
+
+    embedded_observations = []
+    for observation in observations:
+      embedding = observation.embeddings[:,dims]
+      embedded_observation = self.observation_class(*(observation[:-1]), embedding)
+      embedded_observations.append(embedded_observation)
+    return embedded_observations
 
   def custom_pad(self, batch_observations):
     '''Pads sequences with 0 and labels with -1; used as collate_fn of DataLoader.
@@ -396,10 +433,10 @@ class BERTDataset(SubwordDataset):
     if subword_tokenizer == None:
       try:
         from pytorch_pretrained_bert import BertTokenizer
-        if self.args['model']['hidden_dim'] == 768:
+        if self.args['model']['embedding_dim'] == 768:
           subword_tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
           print('Using BERT-base-cased tokenizer to align embeddings with PTB tokens')
-        elif self.args['model']['hidden_dim'] == 1024:
+        elif self.args['model']['embedding_dim'] == 1024:
           subword_tokenizer = BertTokenizer.from_pretrained('bert-large-cased')
           print('Using BERT-large-cased tokenizer to align embeddings with PTB tokens')
         else:
