@@ -287,7 +287,9 @@ class SimpleDataset:
       dims = []
       for dim in dims_str:
         dims.append(int(dim))
-      assert len(dims) == self.args['dataset']['sub_dim']['dim_num']
+      assert len(dims) >= self.args['dataset']['sub_dim']['dim_num']
+      dims = dims[0:self.args['dataset']['sub_dim']['dim_num']]
+      
     else:
       dims=list(range(self.args['dataset']['sub_dim']['dim_num']))
 

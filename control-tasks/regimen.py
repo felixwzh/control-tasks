@@ -96,7 +96,12 @@ class ProbeRegimen:
             word_representations = model(observation_batch)
             predictions = probe(word_representations)
             batch_loss, count = loss(predictions, label_batch, length_batch)
-            epoch_dev_loss += batch_loss.detach().cpu().numpy()*count.detach().cpu().numpy()
+            try:
+              epoch_dev_loss += batch_loss.detach().cpu().numpy()*count.detach().cpu().numpy()
+            except:
+              print(label_batch)
+              print(torch.max(label_batch))
+              print(observation_batch)
             epoch_dev_loss_count += count.detach().cpu().numpy()
             epoch_dev_epoch_count += 1
           self.scheduler.step(epoch_dev_loss)
@@ -108,7 +113,7 @@ class ProbeRegimen:
             min_dev_loss_epoch = epoch_index
             min_dev_loss_eval_index = eval_index
             tqdm.write('Saving probe parameters')
-          elif min_dev_loss_eval_index < eval_index - 4:
+          elif min_dev_loss_eval_index < eval_index - 6:
             tqdm.write('Early stopping')
             return
 

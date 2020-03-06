@@ -41,7 +41,7 @@ probe:
   maximum_rank: 1000
   psd_parameters: True
   diagonal: False
-  hidden_layers: 0
+  hidden_layers: 1
   dropout: 0
   params_path: predictor.params
   misc:

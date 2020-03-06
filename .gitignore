@@ -5,3 +5,5 @@
 *.conllu
 /example/
 /results/
+/SA-config/
+*.ipynb_checkpoints

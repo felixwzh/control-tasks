@@ -323,6 +323,15 @@ class WordReporter(Reporter):
     with open(os.path.join(self.reporting_root, split_name + '.root_acc'), 'w') as fout:
       fout.write('\t'.join([str(root_acc), str(correct_root_predictions), str(total_sents)]) + '\n')
       print(os.path.join(self.reporting_root, split_name + '.root_acc'),root_acc)
+    # we also want to make the results in a simple resutls.csv 
+    with open('./results/results.csv','a') as fout:
+      fout.write('acc,{},do_sub_dim,{},dim_num,{},corrupted_token_percent,{},maximum_rank,{},path,{},\n'.format(root_acc,
+                                  self.args['dataset']['sub_dim']['do_sub_dim'],
+                                  self.args['dataset']['sub_dim']['dim_num'],
+                                  self.args['probe']['misc']['corrupted_token_percent'],
+                                  self.args['probe']['maximum_rank'],
+                                  self.reporting_root))   
+
 
   def report_label_values(self, prediction_batches, dataset, split_name):
     total = 0
@@ -339,6 +348,16 @@ class WordReporter(Reporter):
     with open(os.path.join(self.reporting_root, split_name + '.label_acc'), 'w') as fout:
       fout.write(str(float(correct)/  total) + '\n')
       print(os.path.join(self.reporting_root, split_name + '.label_acc'),float(correct)/  total)
+    # we also want to make the results in a simple resutls.csv 
+    with open('./results/results.csv','a') as fout:
+      fout.write('acc,{},do_sub_dim,{},dim_num,{},corrupted_token_percent,{},maximum_rank,{},path,{},\n'.format(float(correct)/  total,
+                                  self.args['dataset']['sub_dim']['do_sub_dim'],
+                                  self.args['dataset']['sub_dim']['dim_num'],
+                                  self.args['probe']['misc']['corrupted_token_percent'],
+                                  self.args['probe']['maximum_rank'],
+                                  self.reporting_root))    
+        # FIXME: we can do better than this after we finish the first round of exp. 
+        # TODO: add hid_dim, and more.
 
   def report_oov_label_values(self, prediction_batches, dataset, split_name):
     # Construct in-vocab set
