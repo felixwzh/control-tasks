@@ -324,13 +324,16 @@ class WordReporter(Reporter):
       fout.write('\t'.join([str(root_acc), str(correct_root_predictions), str(total_sents)]) + '\n')
       print(os.path.join(self.reporting_root, split_name + '.root_acc'),root_acc)
     # we also want to make the results in a simple resutls.csv 
-    with open('./results/results.csv','a') as fout:
-      fout.write('acc,{},do_sub_dim,{},dim_num,{},corrupted_token_percent,{},maximum_rank,{},path,{},\n'.format(root_acc,
+    results_file=os.path.join('./results',self.args['reporting']['results_file'])
+    with open(results_file,'a') as fout:
+      fout.write('acc,{},do_sub_dim,{},dim_num,{},corrupted_token_percent,{},maximum_rank,{},dim_file,{},path,{},comment,{},\n'.format(root_acc,
                                   self.args['dataset']['sub_dim']['do_sub_dim'],
                                   self.args['dataset']['sub_dim']['dim_num'],
                                   self.args['probe']['misc']['corrupted_token_percent'],
                                   self.args['probe']['maximum_rank'],
-                                  self.reporting_root))   
+                                  self.args['dataset']['sub_dim']['dim_file'],
+                                  self.reporting_root,
+                                  self.args['reporting']['comment']))   
 
 
   def report_label_values(self, prediction_batches, dataset, split_name):
@@ -349,13 +352,18 @@ class WordReporter(Reporter):
       fout.write(str(float(correct)/  total) + '\n')
       print(os.path.join(self.reporting_root, split_name + '.label_acc'),float(correct)/  total)
     # we also want to make the results in a simple resutls.csv 
-    with open('./results/results.csv','a') as fout:
-      fout.write('acc,{},do_sub_dim,{},dim_num,{},corrupted_token_percent,{},maximum_rank,{},path,{},\n'.format(float(correct)/  total,
+    
+    results_file=os.path.join('./results',self.args['reporting']['results_file'])
+
+    with open(results_file,'a') as fout:
+      fout.write('acc,{},do_sub_dim,{},dim_num,{},corrupted_token_percent,{},maximum_rank,{},dim_file,{},path,{},comment,{},\n'.format(float(correct)/  total,
                                   self.args['dataset']['sub_dim']['do_sub_dim'],
                                   self.args['dataset']['sub_dim']['dim_num'],
                                   self.args['probe']['misc']['corrupted_token_percent'],
                                   self.args['probe']['maximum_rank'],
-                                  self.reporting_root))    
+                                  self.args['dataset']['sub_dim']['dim_file'],
+                                  self.reporting_root,
+                                  self.args['reporting']['comment']))       
         # FIXME: we can do better than this after we finish the first round of exp. 
         # TODO: add hid_dim, and more.
 

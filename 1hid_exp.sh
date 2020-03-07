@@ -32,114 +32,251 @@
 # python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-1-SA-40.yaml
 # python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-1-SA-30.yaml
 # python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-1-SA-20.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-1-SA-10.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-1-SA-5.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-1-SA-10.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-1-SA-5.yaml
 
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-150.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-125.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-100.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-90.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-80.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-70.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-60.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-50.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-40.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-30.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-20.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-10.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-5.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-150.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-125.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-100.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-90.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-80.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-70.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-60.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-50.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-40.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-30.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-20.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-10.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-1-SA-5.yaml
 
 
 
-# 300
+# # 300
 
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-768.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-400.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-300.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-200.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-150.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-125.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-100.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-90.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-80.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-70.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-60.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-50.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-40.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-30.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-20.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-10.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-5.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-768.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-400.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-300.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-200.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-150.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-125.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-100.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-90.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-80.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-70.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-60.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-50.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-40.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-30.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-20.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-10.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-5.yaml
 
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-768.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-400.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-300.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-200.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-150.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-125.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-100.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-90.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-80.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-70.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-60.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-50.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-40.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-30.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-20.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-10.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-5.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-768.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-400.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-300.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-200.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-150.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-125.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-100.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-90.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-80.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-70.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-60.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-50.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-40.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-30.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-20.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-10.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-5.yaml
 
-# 50
+# # 50
 
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-768.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-400.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-300.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-200.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-150.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-125.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-100.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-90.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-80.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-70.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-60.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-50.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-40.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-30.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-20.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-10.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-5.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-768.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-400.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-300.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-200.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-150.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-125.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-100.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-90.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-80.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-70.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-60.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-50.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-40.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-30.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-20.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-10.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-5.yaml
 
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-768.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-400.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-300.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-200.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-150.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-125.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-100.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-90.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-80.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-70.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-60.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-50.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-40.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-30.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-20.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-10.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-5.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-768.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-400.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-300.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-200.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-150.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-125.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-100.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-90.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-80.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-70.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-60.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-50.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-40.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-30.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-20.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-10.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-5.yaml
+
+
+
+
+
+
+
+
+
+
+## corr_sum 300 SA 1hidden 
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-5-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-10-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-20-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-30-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-40-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-50-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-60-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-70-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-80-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-90-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-100-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-125-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-150-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-200-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-300-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-400-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank300-1hid-BERT-base-SA-768-corr_sum.yaml
+
+
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-5-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-10-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-20-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-30-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-40-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-50-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-60-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-70-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-80-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-90-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-100-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-125-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-150-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-200-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-300-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-400-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank300-1hid-BERT-base-SA-768-corr_sum.yaml
+
+
+## corr_sum 50 SA 1hidden 
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-5-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-10-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-20-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-30-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-40-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-50-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-60-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-70-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-80-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-90-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-100-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-125-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-150-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-200-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-300-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-400-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank50-1hid-BERT-base-SA-768-corr_sum.yaml
+
+
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-5-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-10-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-20-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-30-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-40-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-50-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-60-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-70-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-80-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-90-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-100-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-125-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-150-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-200-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-300-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-400-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank50-1hid-BERT-base-SA-768-corr_sum.yaml
+
+
+## corr_sum 1000 SA 1hidden 
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-5-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-10-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-20-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-30-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-40-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-50-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-60-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-70-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-80-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-90-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-100-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-125-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-150-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-200-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-300-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-400-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank1000-1hid-BERT-base-SA-768-corr_sum.yaml
+
+
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-5-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-10-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-20-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-30-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-40-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-50-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-60-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-70-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-80-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-90-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-100-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-125-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-150-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-200-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-300-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-400-corr_sum.yaml
+python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted1-rank1000-1hid-BERT-base-SA-768-corr_sum.yaml
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 100
 
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-768.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-400.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-300.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-200.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-150.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-125.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-100.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-90.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-80.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-70.yaml
-python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-60.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-768.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-400.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-300.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-200.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-150.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-125.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-100.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-90.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-80.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-70.yaml
+# python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-60.yaml
 python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-50.yaml
 python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-40.yaml
 python control-tasks/run_experiment.py SA-config/en_ewt-pos-corrupted0-rank100-1hid-BERT-base-SA-30.yaml
