@@ -24,8 +24,9 @@ dataset:
     test_path: en_ewt-ud-test.bert-base-layers.hdf5
     embedding_dim: 768 # ELMo word embedding dim    
   sub_dim:
-    do_sub_dim: True
-    dim_num: 384
+    do_sub_dim: False
+    do_sub_dim_rest: True
+    dim_num: 5
     dim_file: dim.tsv # either the real file, or NONE, this will select the first dim_num dimensions
   batch_size: 20
   dataset_size: 40000

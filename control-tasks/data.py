@@ -96,6 +96,13 @@ class SimpleDataset:
       train_observations = self.optionally_select_sub_dimensions_embeddings(train_observations)
       dev_observations = self.optionally_select_sub_dimensions_embeddings(dev_observations)
       test_observations = self.optionally_select_sub_dimensions_embeddings(test_observations)
+    elif 'do_sub_dim_rest' in self.args['dataset']['sub_dim']:
+      if self.args['dataset']['sub_dim']['do_sub_dim_rest'] and not self.args['dataset']['sub_dim']['do_sub_dim']:
+        assert self.args['dataset']['embeddings']['embedding_dim']-self.args['dataset']['sub_dim']['dim_num'] == self.args['model']['hidden_dim']
+        assert self.args['dataset']['sub_dim']['dim_num'] <= self.args['dataset']['embeddings']['embedding_dim']
+        train_observations = self.optionally_select_sub_dimensions_embeddings(train_observations)
+        dev_observations = self.optionally_select_sub_dimensions_embeddings(dev_observations)
+        test_observations = self.optionally_select_sub_dimensions_embeddings(test_observations)    
     else:
       assert self.args['dataset']['embeddings']['embedding_dim'] == self.args['model']['hidden_dim']
     return train_observations, dev_observations, test_observations
@@ -284,11 +291,17 @@ class SimpleDataset:
       with open(self.args['dataset']['sub_dim']['dim_file'],'r') as fin:
         lines = fin.readlines()
         dims_str = lines[0].strip().split(' ')
-      dims = []
+      dims_ = []
       for dim in dims_str:
-        dims.append(int(dim))
-      assert len(dims) >= self.args['dataset']['sub_dim']['dim_num']
-      dims = dims[0:self.args['dataset']['sub_dim']['dim_num']]
+        dims_.append(int(dim))
+      assert len(dims_) >= self.args['dataset']['sub_dim']['dim_num']
+      
+      dims = dims_[0:self.args['dataset']['sub_dim']['dim_num']]
+      if 'do_sub_dim_rest' in self.args['dataset']['sub_dim']:
+        if self.args['dataset']['sub_dim']['do_sub_dim_rest']:
+          dims = dims_[self.args['dataset']['sub_dim']['dim_num']:]
+
+
       
     else:
       dims=list(range(self.args['dataset']['sub_dim']['dim_num']))

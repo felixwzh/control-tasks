@@ -328,7 +328,7 @@ class WordReporter(Reporter):
     with open(results_file,'a') as fout:
       fout.write('acc,{},do_sub_dim,{},dim_num,{},corrupted_token_percent,{},maximum_rank,{},dim_file,{},path,{},comment,{},\n'.format(root_acc,
                                   self.args['dataset']['sub_dim']['do_sub_dim'],
-                                  self.args['dataset']['sub_dim']['dim_num'],
+                                  self.args['model']['hidden_dim'],
                                   self.args['probe']['misc']['corrupted_token_percent'],
                                   self.args['probe']['maximum_rank'],
                                   self.args['dataset']['sub_dim']['dim_file'],
@@ -358,7 +358,7 @@ class WordReporter(Reporter):
     with open(results_file,'a') as fout:
       fout.write('acc,{},do_sub_dim,{},dim_num,{},corrupted_token_percent,{},maximum_rank,{},dim_file,{},path,{},comment,{},\n'.format(float(correct)/  total,
                                   self.args['dataset']['sub_dim']['do_sub_dim'],
-                                  self.args['dataset']['sub_dim']['dim_num'],
+                                  self.args['model']['hidden_dim'],
                                   self.args['probe']['misc']['corrupted_token_percent'],
                                   self.args['probe']['maximum_rank'],
                                   self.args['dataset']['sub_dim']['dim_file'],
